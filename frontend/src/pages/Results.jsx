@@ -1,5 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import React from "react";
+import Navbar from "../components/Navbar";
+
 
 function Result() {
   const location = useLocation();
@@ -32,7 +34,9 @@ function Result() {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-slate-100 p-8">
-      <div className="bg-white shadow-lg rounded-lg flex w-full max-w-5xl">
+      <Navbar />
+      <div className="bg-white shadow-lg rounded-lg flex w-full max-w-5xl p-10 mt-16">
+
         {/* Left Side - 40% */}
         <div className="w-2/5 bg-slate-700 text-white p-6 flex flex-col justify-center items-center rounded-l-lg">
           <h2 className="text-3xl font-semibold text-center">Your Future Awaits!</h2>
@@ -56,7 +60,7 @@ function Result() {
                   <p className="text-sm text-gray-600">{career.description}</p>
                 </div>
                 <button 
-                  className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition"
+                  className="bg-slate-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition"
                   onClick={() => navigate(`/career-details/${career.title.toLowerCase().replace(/\s+/g, "-")}`)}
                 >
                   Details
@@ -68,13 +72,13 @@ function Result() {
           {/* Navigation Buttons */}
           <div className="mt-6 flex justify-between">
             <button 
-              className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition"
+              className="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition"
               onClick={() => navigate("/quiz")}
             >
               Retake Quiz
             </button>
             <button 
-              className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition"
+              className="bg-green-800 text-white px-4 py-2 rounded-md hover:bg-green-700 transition"
               onClick={() => navigate("/roadmap")}
             >
               View Career Roadmap
