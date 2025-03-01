@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { FaArrowAltCircleLeft } from "react-icons/fa";
 
 const dummyQuestions = [
   { question: "What does HTML stand for?", options: ["Hyper Text Markup Language", "High Tech Machine Learning", "Hyperlink and Text Markup Language", "Home Tool Markup Language"] },
@@ -24,6 +26,14 @@ const Quiz = () => {
       {/* View 1: Welcome Screen */}
       {view === "welcome" && (
         <div className="flex w-full max-w-2xl bg-gray-300 p-10 rounded-lg shadow-lg h-120">
+          {/* Back Button */}
+          <Link 
+            to="/" 
+            className="absolute top-4 left-4 text-gray-700 hover:text-black transition flex items-center space-x-2"
+          >
+            <span className="text-4xl text-black" ><FaArrowAltCircleLeft /> </span>
+          </Link>
+
           <div className="w-1/2 flex flex-col justify-center items-center">
             <h1 className="text-3xl font-bold text-gray-800">Welcome to the Quiz</h1>
             <p className="text-gray-600 mt-2">Test your knowledge!</p>
