@@ -61,7 +61,9 @@ function Result() {
                 </div>
                 <button 
                   className="bg-slate-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition"
-                  onClick={() => navigate(`/career-details/${career.title.toLowerCase().replace(/\s+/g, "-")}`)}
+                  // onClick={() => navigate(`/career-details/${career.title.toLowerCase().replace(/\s+/g, "-")}`)}
+                  onClick={() => navigate(`/details`)}
+
                 >
                   Details
                 </button>

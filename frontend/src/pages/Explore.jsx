@@ -26,7 +26,31 @@ const domains = [
     title: "Cyber Security",
     description: "Deploy and manage scalable cloud solutions.",
     image: "https://cdn-icons-png.flaticon.com/512/6783/6783360.png"
-  }
+  },
+  {
+    id: "Networking",
+    title: "Database Fundamentals",
+    description: "Build and design websites using modern frameworks and tools.",
+    image: "https://cdn-icons-png.flaticon.com/512/8526/8526306.png"
+  },
+  {
+    id: "Software development",
+    title: "Software Development",
+    description: "Build and design websites using modern frameworks and tools.",
+    image: "https://cdn-icons-png.flaticon.com/512/8526/8526306.png"
+  },
+  {
+    id: "Programming Skills",
+    title: "Programming Skills",
+    description: "Build and design websites using modern frameworks and tools.",
+    image: "https://cdn-icons-png.flaticon.com/512/8526/8526306.png"
+  },
+  {
+    id: "Projectmanagement",
+    title: "Project Management",
+    description: "Build and design websites using modern frameworks and tools.",
+    image: "https://cdn-icons-png.flaticon.com/512/8526/8526306.png"
+  },
 ];
 
 const Explore = () => {
@@ -54,6 +78,8 @@ const Explore = () => {
           </div>
         ))}
       </div>
+
+      
     </div>
   );
 };

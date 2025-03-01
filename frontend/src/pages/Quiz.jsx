@@ -84,7 +84,7 @@ const Quiz = () => {
             onClick={() => console.log("Go to results page")}
             className="mt-6 bg-slate-600 text-white px-6 py-3 rounded-lg shadow-lg font-semibold hover:bg-slate-700 transition"
           >
-            View Results
+            <a href="/results">View Results</a>
           </button>
         </div>
       )}

@@ -7,6 +7,9 @@ import React from "react";
 import Quiz from "./pages/Quiz";
 import Explore from "./pages/Explore";
 import DomainDetail from "./pages/DomainDetail";
+import Roadmap from "./pages/Roadmap";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
           <Route path="/results" element={<Results />} />
           <Route path="/explore" element = {<Explore/>} />
           <Route path="/domain/:id" element = {<DomainDetail/>} />
+          <Route path="/roadmap" element={<Roadmap />} />
+          <Route path="about" element={<About/>} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>
