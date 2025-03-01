@@ -24,7 +24,7 @@ function Home() {
         <div className="flex gap-6 justify-center">
           <Link
             to="/quiz"
-            className="bg-yellow-700 text-black px-6 py-3 rounded-lg shadow-lg font-semibold transition duration-300 transform hover:scale-105 hover:bg-slate-300"
+            className="bg-slate-500 text-black px-6 py-3 rounded-lg shadow-lg font-semibold transition duration-300 transform hover:scale-105 hover:bg-slate-400"
           >
             Get Started 🚀
           </Link>
